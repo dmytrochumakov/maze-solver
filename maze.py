@@ -10,7 +10,7 @@ class Maze:
         num_cols,
         cell_size_x,
         cell_size_y,
-        win,
+        win=None,
     ):
         self._x1 = x1
         self._y1 = y1
@@ -31,7 +31,7 @@ class Maze:
             
             
             for c in range(self._num_cols):
-                for r in range(self._num_rows)                                
+                for r in range(self._num_rows):                           
                     self._draw_cell(c, r)
                 
 
